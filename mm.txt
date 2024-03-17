@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp18
+{
+    struct employee
+    {
+        public string name;
+        public int age;
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            employee[] employees = new employee[2];
+            for (int i = 0; i < employees.Length; i++)
+            {
+                employees[i].name = Console.ReadLine();
+                employees[i].age = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < employees.Length; i++)
+                Console.WriteLine(employees[i].name + "\n" + employees[i].age);
+
+        }
+    }
+}
